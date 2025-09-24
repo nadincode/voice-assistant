@@ -16,5 +16,5 @@ def transcribe():
             text = recognizer.recognize_google(audio, language="ar-SA")
     return jsonify({"text": text})
 
-if name == "__main__":
+if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
